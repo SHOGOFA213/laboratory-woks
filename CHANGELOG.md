@@ -19,4 +19,17 @@
 - Ведётся история изменений в этом файле
 - Коммиты следуют стандарту Conventional Commits
 
+## 📂 Как получить файлы
+- Все файлы лабораторной работы находятся в папке `Lab-03/`
+- Отчёты: `report.pdf`, `report.md`, `report.docx`
+- Презентация: `presentation.pdf`, `presentation.md`, `presentation.html`
+- Схемы: `Lab-03/images/`
+
+## 🔗 Прямые ссылки на файлы
+- [Отчёт PDF](Lab-03/report.pdf)
+- [Отчёт PDF](Lab-03/report.md)
+- [Отчёт docx](Lab-03/report.docx)
+- [Презентация PDF](Lab-03/presentation.pdf)
+- [Презентация HTML](Lab-03/presentation.html)
+- [Презентация md](Lab-03/presentation.md)
 
