@@ -1,0 +1,161 @@
+<h2 id="цель-работы">Цель работы</h2>
+<p>Освоить настройку прав доступа пользователей к ресурсам сети с
+использованием списков управления доступом (ACL) на маршрутизаторе
+Cisco. Научиться фильтровать трафик на основе протоколов, портов и
+IP-адресов, а также предоставлять расширенные привилегии администратору
+сети.</p>
+<h2 id="топология-сети">Топология сети</h2>
+<figure>
+<img src="images/1.jpg" style="width:70.0%" alt="Топология сети" />
+<figcaption aria-hidden="true">Топология сети</figcaption>
+</figure>
+<h2 id="настройка-ip-адреса-администратора">Настройка IP-адреса
+администратора</h2>
+<figure>
+<img src="images/2.jpg" style="width:70.0%"
+alt="Настройка IP-адреса администратора" />
+<figcaption aria-hidden="true">Настройка IP-адреса
+администратора</figcaption>
+</figure>
+<h2 id="создание-acl-для-web-доступа">Создание ACL для web-доступа</h2>
+<figure>
+<img src="images/5.jpg" style="width:70.0%"
+alt="Создание ACL для web-доступа" />
+<figcaption aria-hidden="true">Создание ACL для web-доступа</figcaption>
+</figure>
+<h2 id="применение-acl-к-интерфейсу">Применение ACL к интерфейсу</h2>
+<p>Список доступа <code>servers-out</code> был применён к интерфейсу
+<strong>FastEthernet0/0.3</strong> (субинтерфейс, ведущий к серверной
+ферме) для <strong>исходящего трафика</strong> (<code>out</code>). Это
+означает, что правила проверяются для пакетов, покидающих маршрутизатор
+через этот интерфейс.</p>
+<h2 id="проверка-http-доступа-успех">Проверка HTTP-доступа (успех)</h2>
+<figure>
+<img src="images/6.jpg" style="width:70.0%"
+alt="Проверка HTTP-доступа" />
+<figcaption aria-hidden="true">Проверка HTTP-доступа</figcaption>
+</figure>
+<h2 id="проверка-ping-до-сервера-неудача">Проверка ping до сервера
+(неудача)</h2>
+<figure>
+<img src="images/7.jpg" style="width:70.0%"
+alt="Проверка ping до сервера" />
+<figcaption aria-hidden="true">Проверка ping до сервера</figcaption>
+</figure>
+<h2 id="добавление-правил-для-администратора">Добавление правил для
+администратора</h2>
+<figure>
+<img src="images/8.jpg" style="width:70.0%"
+alt="Добавление правил для администратора" />
+<figcaption aria-hidden="true">Добавление правил для
+администратора</figcaption>
+</figure>
+<h2 id="успешное-ftp-подключение-администратора">Успешное
+FTP-подключение администратора</h2>
+<figure>
+<img src="images/10.jpg" style="width:100.0%"
+alt="Успешное FTP-подключение администратора" />
+<figcaption aria-hidden="true">Успешное FTP-подключение
+администратора</figcaption>
+</figure>
+<h2 id="успешное-ftp-подключение-администратора-1">Успешное
+FTP-подключение администратора</h2>
+<figure>
+<img src="images/11.jpg" style="width:70.0%"
+alt="Успешное FTP-подключение администратора" />
+<figcaption aria-hidden="true">Успешное FTP-подключение
+администратора</figcaption>
+</figure>
+<h2 id="запрет-ftp-доступа-для-других-пользователей">Запрет FTP-доступа
+для других пользователей</h2>
+<figure>
+<img src="images/9.jpg" style="width:70.0%"
+alt="Запрет FTP-доступа для других пользователей" />
+<figcaption aria-hidden="true">Запрет FTP-доступа для других
+пользователей</figcaption>
+</figure>
+<h2 id="настройка-acl-для-файлового-сервера">Настройка ACL для файлового
+сервера</h2>
+<figure>
+<img src="images/12.jpg" style="width:100.0%"
+alt="Настройка ACL для файлового сервера" />
+<figcaption aria-hidden="true">Настройка ACL для файлового
+сервера</figcaption>
+</figure>
+<h2 id="проверка-ftp-доступа-к-файловому-серверу">Проверка FTP-доступа к
+файловому серверу</h2>
+<figure>
+<img src="images/13.jpg" style="width:70.0%"
+alt="Проверка FTP-доступа к файловому серверу" />
+<figcaption aria-hidden="true">Проверка FTP-доступа к файловому
+серверу</figcaption>
+</figure>
+<h2 id="настройка-acl-для-mail-dns-и-icmp">Настройка ACL для mail, DNS и
+ICMP</h2>
+<figure>
+<img src="images/14.jpg" style="width:100.0%"
+alt="Настройка ACL для mail, DNS и ICMP" />
+<figcaption aria-hidden="true">Настройка ACL для mail, DNS и
+ICMP</figcaption>
+</figure>
+<h2 id="проверка-доступа-к-web-серверу-по-имени">Проверка доступа к
+web-серверу по имени</h2>
+<figure>
+<img src="images/15.jpg" style="width:70.0%"
+alt="Проверка доступа к web-серверу по имени" />
+<figcaption aria-hidden="true">Проверка доступа к web-серверу по
+имени</figcaption>
+</figure>
+<h2 id="проверка-работы-почтового-сервера">Проверка работы почтового
+сервера</h2>
+<figure>
+<img src="images/16.jpg" style="width:70.0%"
+alt="Проверка работы почтового сервера" />
+<figcaption aria-hidden="true">Проверка работы почтового
+сервера</figcaption>
+</figure>
+<h2 id="проверка-icmp-доступа-после-изменения-acl">Проверка ICMP-доступа
+после изменения ACL</h2>
+<figure>
+<img src="images/17.jpg"
+alt="Проверка ICMP-доступа после изменения ACL" />
+<figcaption aria-hidden="true">Проверка ICMP-доступа после изменения
+ACL</figcaption>
+</figure>
+<h2 id="настройка-доступа-к-сети-управления-ssh">Настройка доступа к
+сети управления (SSH)</h2>
+<figure>
+<img src="images/19.jpg"
+alt="Настройка доступа к сети управления (SSH)" />
+<figcaption aria-hidden="true">Настройка доступа к сети управления
+(SSH)</figcaption>
+</figure>
+<h2 id="проверка-ssh-доступа-к-маршрутизатору-и-коммутаторам">Проверка
+SSH-доступа к маршрутизатору и коммутаторам</h2>
+<figure>
+<img src="images/20.jpg" style="width:90.0%"
+alt="Проверка SSH-доступа" />
+<figcaption aria-hidden="true">Проверка SSH-доступа</figcaption>
+</figure>
+<h2 id="проверка-ssh-доступа-к-маршрутизатору-и-коммутаторам-1">Проверка
+SSH-доступа к маршрутизатору и коммутаторам</h2>
+<figure>
+<img src="images/21.jpg" style="width:90.0%"
+alt="Проверка SSH-доступа" />
+<figcaption aria-hidden="true">Проверка SSH-доступа</figcaption>
+</figure>
+<h2 id="просмотр-итоговых-списков-доступа">Просмотр итоговых списков
+доступа</h2>
+<figure>
+<img src="images/22.jpg" style="width:70.0%"
+alt="Просмотр итоговых списков доступа" />
+<figcaption aria-hidden="true">Просмотр итоговых списков
+доступа</figcaption>
+</figure>
+<h2 id="вывод">Вывод</h2>
+<p>В ходе работы настроены ACL на маршрутизаторе. Разрешён HTTP для
+всех, FTP и Telnet — только для администратора (10.128.6.200). Добавлены
+правила для файлового, почтового и DNS-серверов, а также разрешён ICMP
+(ping). Администратор получил доступ к сети управления по SSH. Все
+проверки успешны. Цель достигнута.</p>
+<h1 id="спасибо-за-внимание">Спасибо за внимание</h1>
